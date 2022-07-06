@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-image">
+  <div class="crew">
   </div>
 </template>
 
@@ -10,16 +10,14 @@ import { Options, Vue } from 'vue-class-component';
   components: {
   },
 })
-export default class HomeView extends Vue {}
+export default class Crew extends Vue {}
 </script>
 
 <style lang="scss">
-  .bg-image {
+.crew {
     height: 100vh;
-    background-image: url("../assets/home/background-home-mobile.jpg");
+    background-image: url("../assets/crew/background-crew-tablet.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    left: 0;
-  }
+    background-size: contain;
+}
 </style>
