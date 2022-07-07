@@ -1,10 +1,16 @@
 <script lang="ts">
 import SideBar from '@/components/sidebar/Sidebar.vue'
+import { sidebarWidth } from '@/components/sidebar/state'
+import Header from '@/components/Header.vue'
 export default {
-  components: { SideBar }
+  components: { SideBar, Header },
+  setup() {
+    return {sidebarWidth}
+  }
 }
 </script>
 <template>
+  <Header />
   <SideBar />
   <!-- <header>
     <div class="img-container">
@@ -17,7 +23,9 @@ export default {
       <router-link to="/technology"><span>TECHNOLOGY</span></router-link>
     </nav>
   </header> -->
-  <router-view />
+  <main :style="{ 'margin-right': sidebarWidth }">
+    <router-view />
+  </main>
 </template>
 
 <style lang="scss">
@@ -25,13 +33,14 @@ export default {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  // color: #2c3e50;
 }
 
 // header {
