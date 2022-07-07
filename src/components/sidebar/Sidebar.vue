@@ -26,7 +26,6 @@ export default {
 
 <style lang="scss" scoped>
 .sidebar {
-    /* outline: 1px solid red; */
     background-color: rgba(255,255,255,0.1);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
@@ -44,7 +43,9 @@ export default {
     flex-direction: column;
 }
 .collapse-icon {
-    margin-top: 2em;
+    margin-top: 2.25em;
+    text-align: end;
+    padding-right: 1.5em;
     /* display: flex; */
     /* flex-direction: row-reverse; */
 }
