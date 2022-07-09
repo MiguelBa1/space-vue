@@ -87,6 +87,7 @@ export default {
   padding-top: 7em;
   color: white;
   height: 100vh;
+  height: -webkit-fill-available;
   width: 100vw;
   background-image: url("../assets/destination/background-destination-mobile.jpg");
   background-repeat: no-repeat;

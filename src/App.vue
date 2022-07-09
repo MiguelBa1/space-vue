@@ -40,4 +40,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html {
+  height: -webkit-fill-available;
+}
 </style>
