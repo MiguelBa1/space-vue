@@ -72,7 +72,7 @@ export default {
 
     watch(
       () => currentPlanet.value,
-      (newPlanet, oldPlanet) => {
+      () => {
         getInfoPlanets()
         planetImg.value = require("@/assets/destination/image-" + currentPlanet.value + ".png")
       }
