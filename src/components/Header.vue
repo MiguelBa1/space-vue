@@ -5,7 +5,7 @@
         </div>
         <span class="line"></span>
         <div class="nav-btn" @click="toggleSidebar" v-if="collapsed && mobileView">
-            <img src="@/assets/shared/icon-hamburger.svg" alt="logo">
+            <img src="@/assets/shared/icon-hamburger.svg" alt="menu">
         </div>
         <Navigation v-if="!mobileView" />
     </div>
@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .header {
     user-select: none;
     position: absolute;
@@ -44,7 +44,11 @@ export default {
     display: none;
 }
 .logo {
-    padding: 1.5em 2.5em;
+    padding: 1.5em 1.5em;
+    img {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .nav-btn {
@@ -57,8 +61,11 @@ export default {
         padding-top: 4em;
     }
     .logo {
-        // padding-top: 0;
         padding-left: 3.4em;
+        img {
+            width: 48px;
+            height: 48px;
+        }
     }
     .line {
         z-index: 50;

@@ -1,12 +1,12 @@
 <script lang="ts">
 import SideBar from '@/components/sidebar/Sidebar.vue'
-import { sidebarWidth } from '@/components/sidebar/state'
 import Header from '@/components/Header.vue'
+import { sidebarWidth } from '@/components/sidebar/state'
 import { ref } from '@vue/reactivity'
 import { onMounted } from '@vue/runtime-core'
 
 export default {
-  components: { SideBar, Header },
+  components: { Header, SideBar },
   setup() {
     let mobileView = ref(true)
     onMounted(() => {

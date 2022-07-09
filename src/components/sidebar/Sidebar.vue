@@ -46,8 +46,6 @@ export default {
     margin-top: 2.25em;
     text-align: end;
     padding-right: 1.5em;
-    /* display: flex; */
-    /* flex-direction: row-reverse; */
 }
 .links {
     margin-top: 2em;

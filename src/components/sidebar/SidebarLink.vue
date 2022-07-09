@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="to" class="link" :class="{ active: isActive }">
+  <router-link :to="to" class="link" :class="{ active: isActive }" @click="toggleSidebar">
     <span v-if="!collapsed" class="info">
         <slot />
     </span>
@@ -9,15 +9,15 @@
 <script lang="ts">
 import { computed } from '@vue/runtime-core'
 import { useRoute } from 'vue-router'
-import { collapsed } from '@/components/sidebar/state'
+import { collapsed, toggleSidebar } from '@/components/sidebar/state'
 export default {
     props: {
         to: { type: String, required: true }
     },
-    setup(props: { to: string }) {
+    setup(props: any) {
         const route = useRoute()
         const isActive = computed(() => route.path === props.to)
-        return { isActive, collapsed }
+        return { isActive, collapsed, toggleSidebar }
     }
 }
 </script>
