@@ -15,16 +15,9 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-
-@Options({
-  components: {
-  },
-})
-export default class HomeView extends Vue { }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');

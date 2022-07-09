@@ -10,26 +10,22 @@ const routes = [
   {
     path: '/destination',
     name: 'destination',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Destination.vue')
+    component: () => import('../views/Destination.vue')
   },
+  // {
+  //   path: '/destination',
+  //   redirect: () => { return '/destination/moon'}
+  //   // component: () => import('../views/Destination.vue')
+  // },
   {
     path: '/crew',
     name: 'crew',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Crew.vue')
+    component: () => import('../views/Crew.vue')
   },
   {
     path: '/technology',
     name: 'technology',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Technology.vue')
+    component: () => import('../views/Technology.vue')
   },
 ]
 
