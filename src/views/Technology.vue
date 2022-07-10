@@ -20,8 +20,8 @@ export default class Technology extends Vue {}
   min-height: 100vh;
   min-height: -webkit-fill-available;
   background-image: url("../assets/technology/background-technology-mobile.jpg");
-  min-width: 100vw;
-  min-width: -webkit-fill-available;
+  width: 100vw;
+  // min-width: -webkit-fill-available;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
