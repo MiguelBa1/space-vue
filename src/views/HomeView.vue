@@ -29,8 +29,8 @@
 
 .home {
   color: white;
-  min-height: 100vh;
   min-height: -webkit-fill-available;
+  min-height: 100vh;
   width: 100vw;
   // min-width: -webkit-fill-available;
   background-image: url("../assets/home/background-home-mobile.jpg");
