@@ -3,14 +3,17 @@
     <div class="text">
       <h5 class="subtitle">SO, YOU WANT TO TRAVEL TO</h5>
       <h1 class="title">SPACE</h1>
-      <p class="content">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and
-        not hover kind of on
-        the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+      <p class="content">
+        Let’s face it; if you want to go to space, you might as well genuinely
+        go to outer space and not hover kind of on the edge of it. Well sit
+        back, and relax because we’ll give you a truly out of this world
+        experience!
+      </p>
     </div>
-    <div class="explore">
+    <router-link to="/destination/" class="explore">
       EXPLORE
       <div class="circle"></div>
-    </div>
+    </router-link>
   </div>
 </template>
 
@@ -18,9 +21,9 @@
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 
 .home {
   color: white;
@@ -37,9 +40,9 @@
 }
 
 .subtitle {
-  color: #D0D6F9;
-  margin-top: .5em;
-  font-family: 'Barlow Condensed';
+  color: #d0d6f9;
+  margin-top: 0.5em;
+  font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -48,8 +51,8 @@
 }
 
 .title {
-  margin-top: .25em;
-  font-family: 'Bellefair', serif;
+  margin-top: 0.25em;
+  font-family: "Bellefair", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 80px;
@@ -57,18 +60,16 @@
 }
 
 .content {
-  color: #D0D6F9;
+  color: #d0d6f9;
   margin-top: 1em;
   padding: 0 3em;
-  font-family: 'Barlow', serif;
+  font-family: "Barlow", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
 }
 .explore {
-  cursor: pointer;
-  color: #0B0D17;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,7 +81,9 @@
   background: white;
   border-radius: 100%;
 
-  font-family: 'Bellefair';
+  color: #0b0d17;
+  font-family: "Bellefair";
+  text-decoration: none;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -89,7 +92,7 @@
   position: relative;
 
   box-shadow: 1px 1px 20px black;
-  transition: all .1s ease-in;
+  transition: all 0.1s ease-in;
 
   &:hover {
     box-shadow: 1px 1px 20px black;
@@ -102,14 +105,14 @@
     padding-top: 14em;
   }
   .subtitle {
-    font-family: 'Barlow';
+    font-family: "Barlow";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
   }
   .title {
-    font-family: 'Bellefair';
+    font-family: "Bellefair";
     font-style: normal;
     font-weight: 400;
     font-size: 150px;
@@ -117,7 +120,7 @@
   }
   .content {
     padding: 0 12em;
-    font-family: 'Barlow';
+    font-family: "Barlow";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -126,6 +129,9 @@
   .explore {
     width: 242px;
     height: 242px;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2x;
   }
 }
 
@@ -142,10 +148,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
+
     text-align: start;
     width: 40em;
-    padding: 10em 0 ;
+    padding: 10em 0;
     padding-left: 10.25em;
   }
   .subtitle {
@@ -172,17 +178,17 @@
     width: 274px;
     height: 274px;
   }
-  .circle{
+  .circle {
     background: white;
     position: absolute;
     border-radius: 100%;
     opacity: 0;
     width: 274px;
     height: 274px;
-    transition: opacity .1s ease-in;
+    transition: opacity 0.1s ease-in;
     // transition: height .5s ease-in;
-    &:hover{
-    left:-22.5%;
+    &:hover {
+      left: -22.5%;
       width: 400px;
       height: 400px;
       opacity: 0.1;
