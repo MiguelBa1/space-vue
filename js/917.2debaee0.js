@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkspace_vue"]=self["webpackChunkspace_vue"]||[]).push([[917],{6917:function(e,c,n){n.r(c),n.d(c,{default:function(){return v}});var a=n(3396);const r={class:"crew"};function s(e,c){return(0,a.wg)(),(0,a.iD)("div",r)}var u=n(89);const t={},f=(0,u.Z)(t,[["render",s],["__scopeId","data-v-f739ffae"]]);var v=f}}]);
+//# sourceMappingURL=917.2debaee0.js.map
