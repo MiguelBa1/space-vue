@@ -30,9 +30,9 @@
 .home {
   color: white;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   min-width: 100vw;
   min-width: -webkit-fill-available;
-  min-height: -webkit-fill-available;
   background-image: url("../assets/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;

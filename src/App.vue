@@ -42,6 +42,6 @@ export default {
 }
 html {
   height: -webkit-fill-available;
-  width: -webkit-fill-available;
+  // width: -webkit-fill-available;
 }
 </style>
