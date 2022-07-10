@@ -13,7 +13,7 @@ import { Options, Vue } from 'vue-class-component';
 export default class Technology extends Vue {}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .technology {
   padding-top: 7em;
   color: white;
@@ -27,5 +27,15 @@ export default class Technology extends Vue {}
   flex-direction: column;
   align-content: flex-start;
   text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .technology{
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .technology{
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+  }
 }
 </style>

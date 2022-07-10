@@ -4,5 +4,6 @@ module.exports = defineConfig({
   // publicPath: process.env.NODE_ENV === 'production'
   //   ? '/space-vue/'
   //   : '/'
+  // publicPath: '/space-vue/'
   publicPath: ''
 })

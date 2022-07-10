@@ -1,19 +1,21 @@
 <template>
   <div class="home">
-    <div class="text">
-      <h5 class="subtitle">SO, YOU WANT TO TRAVEL TO</h5>
-      <h1 class="title">SPACE</h1>
-      <p class="content">
-        Let’s face it; if you want to go to space, you might as well genuinely
-        go to outer space and not hover kind of on the edge of it. Well sit
-        back, and relax because we’ll give you a truly out of this world
-        experience!
-      </p>
+    <div class="content">
+      <div class="text">
+        <h5 class="subtitle">SO, YOU WANT TO TRAVEL TO</h5>
+        <h1 class="title">SPACE</h1>
+        <p class="welcome-msg">
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
+      </div>
+      <router-link to="/destination/" class="explore">
+        EXPLORE
+        <div class="circle"></div>
+      </router-link>
     </div>
-    <router-link to="/destination/" class="explore">
-      EXPLORE
-      <div class="circle"></div>
-    </router-link>
   </div>
 </template>
 
@@ -27,16 +29,23 @@
 
 .home {
   color: white;
-  padding-top: 7em;
   height: 100vh;
   width: 100vw;
+  min-height: -webkit-fill-available;
   background-image: url("../assets/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
-  text-align: center;
+}
+.content {
+  // border: 1px solid red;
+  flex: 2;
+  padding-top: 7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .subtitle {
@@ -59,7 +68,7 @@
   line-height: 100px;
 }
 
-.content {
+.welcome-msg {
   color: #d0d6f9;
   margin-top: 1em;
   padding: 0 3em;
@@ -102,6 +111,8 @@
 @media only screen and (min-width: 768px) {
   .home {
     background-image: url("../assets/home/background-home-tablet.jpg");
+  }
+  .content {
     padding-top: 14em;
   }
   .subtitle {
@@ -118,7 +129,7 @@
     font-size: 150px;
     line-height: 150px;
   }
-  .content {
+  .welcome-msg {
     padding: 0 12em;
     font-family: "Barlow";
     font-style: normal;
@@ -138,21 +149,29 @@
 @media only screen and (min-width: 1024px) {
   .home {
     background-image: url("../assets/home/background-home-desktop.jpg");
+  }
+  .content {
+    margin: auto;
+    width: 80%;
     padding-top: 12em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // flex-direction: row;
+    // justify-content: space-between;
   }
   .text {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    // border: 1px solid red;
+    height: 50%;
+    // align-self: center;
+    display: grid;
+    align-self: center;
+    // flex-direction: column;
+    // justify-content: space-around;
 
     text-align: start;
     width: 40em;
-    padding: 10em 0;
-    padding-left: 10.25em;
+    // padding: 10em 0;
+    // padding-left: 10.25em;
   }
   .subtitle {
     margin: 0;
@@ -165,7 +184,7 @@
     font-size: 150px;
     line-height: 172px;
   }
-  .content {
+  .welcome-msg {
     margin: 0;
     padding: 0;
     font-size: 18px;
