@@ -17,10 +17,11 @@ export default class Technology extends Vue {}
 .technology {
   padding-top: 7em;
   color: white;
-  height: 100vh;
-  height: -webkit-fill-available;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   background-image: url("../assets/technology/background-technology-mobile.jpg");
-  width: 100vw;
+  min-width: 100vw;
+  min-width: -webkit-fill-available;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;

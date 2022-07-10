@@ -102,7 +102,8 @@ export default {
   color: white;
   min-height: -webkit-fill-available;
   min-height: 100vh;
-  width: 100vw;
+  min-width: 100vw;
+  min-width: -webkit-fill-available;
   background-image: url("../assets/destination/background-destination-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;

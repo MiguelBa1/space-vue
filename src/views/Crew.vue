@@ -10,10 +10,11 @@
 .crew {
   padding-top: 7em;
   color: white;
-  height: 100vh;
-  height: -webkit-fill-available;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   background-image: url("../assets/crew/background-crew-mobile.jpg");
-  width: 100vw;
+  min-width: 100vw;
+  min-width: -webkit-fill-available;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;

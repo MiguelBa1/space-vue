@@ -29,8 +29,9 @@
 
 .home {
   color: white;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
+  min-width: -webkit-fill-available;
   min-height: -webkit-fill-available;
   background-image: url("../assets/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
@@ -156,22 +157,13 @@
     padding-top: 12em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // flex-direction: row;
-    // justify-content: space-between;
   }
   .text {
-    // border: 1px solid red;
     height: 50%;
-    // align-self: center;
     display: grid;
     align-self: center;
-    // flex-direction: column;
-    // justify-content: space-around;
-
     text-align: start;
     width: 40em;
-    // padding: 10em 0;
-    // padding-left: 10.25em;
   }
   .subtitle {
     margin: 0;
